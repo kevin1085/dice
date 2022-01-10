@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <title>Jeu de dés</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2? family= Lato:ital,wight@1,100 & display=swap');
+        </style>
+        <p>JEU de DÉS</p>
+    <div class="box-principale clear">
+        <p class="text">Règles :
+            Le jeu comprend 2 joueurs sur un seul et même écran.
+            Chaque joueur possède un score temporaire et un score Total.
+            À chaque tour, le joueur a son score temporaire initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite.
+            Lors de son tour, le joueur peut décider à tout moment de:
+            - Cliquer sur l’option “Sauvegarde mon score”, qui permet d’envoyer les points du Current vers le Total. Ce sera alors le tour de l’autre joueur.
+            - Lancer le dé. S’il obtient un 1, son score temporaire est perdu et c’est la fin de son tour.
+            Le premier joueur qui atteint les 100 points  gagne le jeu.
+        
+             </p>
+    <div class="panel-joueur">
+        <button class="player-name" id="name-1">Joueur 1</button>
+        <div class="player-score" id="score-1">12</div>
+        <div class="box-number one">
+            <div class="box-number-label">Current</div>
+            <div class="box-number-score" id="current-1">23</div>
+        </div>
+    </div>
+    
+    <div class="panel1-joueur">
+        <button class="player-name" id="name-2">Joueur 2</button>
+        <div class="player-score" id="score-2">39</div>
+        <div class="box-number two">
+            <div class="box-number-label1">Current</div>
+            <div class="box-number-score" id="current-2">13</div>
+        </div>
+    </div>
+    <div class="bouton">
+    <button class="btn-new-game" id="new"><i class="ion-ios-game-controller-b">Nouveau jeu</i></button>
+    <button class="btn-mix" id="mix"><i class="ion-ios-refresh">Mélanger les dés</i></button>
+    <button class="btn-keep-score" id="save"><i class="ion-ios-download">Sauvegarde mon score</i></button>
+</div>   
+</div>
+    <img src="/image/dice-5.png" alt="dice" class="dice">
+    <script src="/js/index.js"></script>
+</body>
+</html>
